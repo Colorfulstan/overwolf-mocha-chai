@@ -1,0 +1,46 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "overwolf-mocha-chai",
+    "author": "Colorfulstan",
+    "version": "0.0.1.1",
+    "minimum-overwolf-version": "0.91.145",
+    "access-name": "",
+    "description": "A testrunner app for overwolf",
+    "dock_button_title": "testrunner",
+    "icon": "chai.png",
+    "icon_gray": "mocha.png"
+  },
+  "dependencies": [],
+  "data": {
+    "windows": {
+      "Testrunner": {
+        "file": "runner/Testrunner.html",
+        "show_in_taskbar": true,
+        "transparent": false,
+        "resizable": false,
+        "show_minimize": true,
+        "clickthrough": false,
+        "show_only_on_stream": false,
+        "ignore_keyboard_events": false,
+        "in_game_only": false,
+        "desktop_only": false,
+        "disable_restore_animation": true,
+        "grab_keyboard_focus": false,
+        "size": {"width":1024, "height":800},
+        "min_size": {"width":1024, "height":800},
+        "max_size": {"width":1024, "height":800},
+        "start_position": {},
+        "topmost": false
+      }
+    },
+    "start_window": "Testrunner",
+    "externally_connectable": {
+      "matches": []
+    },
+    "hotkeys": {},
+    "content_scripts": [],
+    "launch_events": []
+  }
+}

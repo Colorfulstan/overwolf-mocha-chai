@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Toy Problems Testing Suite</title>
+
+	<!-- testing frameworks -->
+	<link rel="stylesheet" href="mocha.css">
+	<script src="sinon.js"></script>
+	<script src="mocha.js"></script>
+	<script src="chai.js"></script>
+	<script src="sinon-chai.js"></script>
+
+	<script>
+		mocha.setup('bdd');
+		window.expect = chai.expect;
+//		$(function() {
+//			window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+//		});
+		window.onload = function () {
+			mocha.run();
+		}
+	</script>
+
+	<!-- source files -->
+	<script src="../generated/all.js"></script>
+	<!-- tests -->
+	<script src="../generated/all.test.js"></script>
+</head>
+<body>
+<button type="button" onclick="location.reload()">reload</button>
+<div id="mocha"></div>
+</body>
+</html>
